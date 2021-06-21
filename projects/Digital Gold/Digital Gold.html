@@ -4,7 +4,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="img/favicon.png" type="image/png">
+        <link rel="icon" href="../../img/favicon.png" type="image/png">
         <title>Agnish Ghatak</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="../../css/bootstrap.css">
@@ -18,8 +18,19 @@
         <!-- main css -->
         <link rel="stylesheet" href="../../css/style.css">
         <link rel="stylesheet" href="../../css/responsive.css">
+
+	<!-- Lightbox CSS -->
+	<link rel="stylesheet" href="../../css/bootstrap5.css">
+	<link rel="stylesheet" href="../../vendors/lightgallery/css/lightgallery-bundle.css">
+	<link rel="stylesheet" href="../../vendors/lightgallery/css/lg-transitions.css">
+	<noscript>
+	<style>img.lazyload{display:none}</style>
+	</noscript>
+
     </head>
     <body>
+
+
 
         <!--================Header Menu Area =================-->
         <header class="header_area">
@@ -45,16 +56,16 @@
 							<ul class="nav navbar-nav menu_nav ml-auto">
 								<li class="nav-item active"><a class="nav-link" href="../../index.html#home-section">Home</a></li> 
 								<li class="nav-item"><a class="nav-link" href="../../index.html#about-section">About</a></li> 
-								<li class="nav-item"><a class="nav-link" href="#services-section">Services</a>
-								<li class="nav-item"><a class="nav-link" href="#portfolio-section">Portfolio</a> 
+								<li class="nav-item"><a class="nav-link" href="../../index.html#services-section">Services</a>
+								<li class="nav-item"><a class="nav-link" href="../../index.html#portfolio-section">Portfolio</a> 
 								<li class="nav-item submenu dropdown">
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
 									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="blog.html">Visit My Blogsite</a></li>
-										<li class="nav-item"><a class="nav-link" href="#blog-section">Recent Blogs</a></li>
+										<li class="nav-item"><a class="nav-link" href="../../blog.html">Visit My Blogsite</a></li>
+										<li class="nav-item"><a class="nav-link" href="../../index.html#blog-section">Recent Blogs</a></li>
 									</ul>
 								</li> 
-								<li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+								<li class="nav-item"><a class="nav-link" href="../../index.html#contact-section">Contact</a></li>
 							</ul>
 						</div> 
 					</div>
@@ -72,9 +83,9 @@
 					<div class="banner_content text-center">
 						<h2>Portfolio Details</h2>
 						<div class="page_link">
-							<a href="index.html">Home</a>
-							<a href="services.html">Portfolio</a>
-							<a href="services.html">Portfolio Details</a>
+							<a href="../../index.html#home-section">Home</a>
+							<a href="../../index.html#portfolio-section">Portfolio</a>
+							<a href="WhatsApp.html">WhatsApp for Business</a>
 						</div>
 						
 					</div>
@@ -89,19 +100,20 @@
         		<div class="portfolio_details_inner">
 					<div class="row">
 						<div class="col-md-6">
-							<div class="left_img">
-								<img class="img-fluid" src="img/gallery/portfolio_details.jpg" alt="">
-							</div>
+							<div id="inline-gallery-container" class="inline-gallery-container"></div>
+                						<div class="lg-dropdown-overlay"></div>
+							<div class="lg-progress-bar"></div>
+							<div class="lg-progress"></div>
 						</div>
 						<div class="col-md-6">
 							<div class="portfolio_right_text">
-								<h4>Lavendar ambient colorlib</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+								<h4>WhatsApp for Business</h4>
+								<p>Launched a new channel within one month during Covid Pandemic to solve customer problems</p>
 								<ul class="list">
 									<li><span>Rating</span>: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
-									<li><span>Client</span>:  colorlib</li>
-									<li><span>Website</span>:  colorlib.com</li>
-									<li><span>Completed</span>:  17 Aug 2018</li>
+									<li><span>Brand</span>:  Muthoot Fincorp</li>
+									<li><span>Website</span>:  https://www.muthootfincorp.com/whatsapp/</li>
+									<li><span>Completed</span>:  05 May 2020</li>
 								</ul>
 							</div>
 						</div>
@@ -114,7 +126,7 @@
         <!--================End Portfolio Details Area =================-->
         
         <!--================Footer Area =================-->
-        <footer class="footer_area p_120">
+        <footer class="footer_area p_120" id="footer-section">
         	<div class="container">
         		<div class="row footer_inner">
         			<div class="col-lg-5 col-sm-6">
@@ -122,7 +134,7 @@
         					<div class="f_title">
         						<h3>About Me</h3>
         					</div>
-        					<p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
+        					<p>Reach out if you see something interesting, or for any feedback. I would love to connect.</p>
         					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -136,7 +148,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         					</div>
         					<p>Stay updated with our latest trends</p>
         					<div id="mc_embed_signup">
-                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                                <form action="https://gmail.us6.list-manage.com/subscribe/post?u=f124721a21fc9452df9af9877&amp;id=66e28aa980" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate class="subscribe_form relative">
                                 	<div class="input-group d-flex flex-row">
                                         <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
                                         <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
@@ -153,12 +165,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         					</div>
         					<p>Let us be social</p>
         					<ul class="list">
-        						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-        						<li><a href="#"><i class="fa fa-behance"></i></a></li>
+        						<li><a href="https://www.linkedin.com/in/agnish-ghatak/"> <i class="fa fa-linkedin"></i></a></li>
+        						<li><a href="https://twitter.com/agnishghatak"><i class="fa fa-twitter"></i></a></li>
+        						<li><a href="https://www.instagram.com/agnishghatak/"><i class="fa fa-instagram"></i></a></li>
         					</ul>
-        				</aside>
+</div>
+        				
+</aside>
         			</div>
         		</div>
         	</div>
@@ -168,21 +181,32 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         
         
         
+        
         <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/stellar.js"></script>
-        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="vendors/isotope/isotope-min.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="js/mail-script.js"></script>
-        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
-        <script src="js/theme.js"></script>
-    </body>
+        <!-- jQuery f../../irst, then Popper.js, then Bootstrap JS -->
+        <script src="../../js/jquery-3.2.1.min.js"></script>
+        <script src="../../js/popper.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/stellar.js"></script>
+        <script src="../../vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="../../vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="../../vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="../../vendors/isotope/isotope-min.js"></script>
+        <script src="../../vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="../../js/jquery.ajaxchimp.min.js"></script>
+        <script src="../../vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="../../vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="../../js/mail-script.js"></script>
+        <!--gmaps Js-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe9SB_19QrdyQ5rq-_QirsgBB2Te5hSYk"></script>
+        <script src="../../js/gmaps.min.js"></script>
+        <script src="../../js/theme.js"></script>
+
+	<!-- Start of HubSpot Embed Code Chatbot -->
+  	<script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/19877635.js"></script>
+	<!-- End of HubSpot Embed Code -->    
+
+	<script src="lazysizes.js"></script>
+
+      </body>
 </html>
