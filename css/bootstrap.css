@@ -4900,7 +4900,7 @@ input[type=submit].btn-block {
     padding: .5rem .75rem;
     margin-left: -1px;
     line-height: 1.25;
-    color: #007bff;
+    color: #8490FF;
     background-color: #fff;
     border: 1px solid #dee2e6
 }
@@ -4937,8 +4937,8 @@ input[type=submit].btn-block {
 .page-item.active .page-link {
     z-index: 1;
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff
+    background-color: #8490FF;
+    border-color: #8490FF
 }
 
 .page-item.disabled .page-link {
@@ -5105,15 +5105,12 @@ input[type=submit].btn-block {
 }
 
 .jumbotron {
-    padding: 2rem 1rem;
     margin-bottom: 2rem;
-    background-color: #e9ecef;
-    border-radius: .3rem
+    background-color: #fff;
 }
 
 @media (min-width:576px) {
     .jumbotron {
-        padding: 4rem 2rem
     }
 }
 
