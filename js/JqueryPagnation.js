@@ -71,6 +71,7 @@
             this.render(this.getPages(this.options.startPage));
             this.setupEvents();
         }
+        
 
         return this;
     };
@@ -104,10 +105,6 @@
         buildListItems: function (pages) {
             var listItems = [];
 
-            if (this.options.first) {
-                listItems.push(this.buildItem('first', 1));
-            }
-
             if (this.options.prev) {
                 var prev = pages.currentPage > 1 ? pages.currentPage - 1 : this.options.loop ? this.options.totalPages  : 1;
                 listItems.push(this.buildItem('prev', prev));
@@ -121,11 +118,7 @@
                 var next = pages.currentPage < this.options.totalPages ? pages.currentPage + 1 : this.options.loop ? 1 : this.options.totalPages;
                 listItems.push(this.buildItem('next', next));
             }
-
-            if (this.options.last) {
-                listItems.push(this.buildItem('last', this.options.totalPages));
-            }
-
+			
             return listItems;
         },
 
@@ -220,7 +213,7 @@
         },
 
         makeHref: function (page) {
-            return this.options.href ? this.generateQueryString(page) : "#";
+            return this.options.href ? this.generateQueryString(page) : "#category-section";
         },
 
         makeText: function (text, page) {
@@ -271,8 +264,11 @@
 
         if (!data) $this.data('luckmoshy-pagination', (data = new LuckmoshyPagination(this, options) ));
         if (typeof option === 'string') methodReturn = data[ option ].apply(data, args);
-
+		
+		
         return ( methodReturn === undefined ) ? $this : methodReturn;
+        
+        
     };
 
     $.fn.luckmoshyPagination.defaults = {
@@ -285,23 +281,21 @@
         pageVariable: '{{page}}',
         totalPagesVariable: '{{total_pages}}',
         page: null,
-        first: 'First',
         prev: 'Previous',
         next: 'Next',
-        last: 'Last',
         loop: false,
         onPageClick: null,
         paginationClass: 'pagination',
-        nextClass: 'page-item next',
-        prevClass: 'page-item prev',
-        lastClass: 'page-item last',
-        firstClass: 'page-item first',
+        nextClass: 'page-item',
+        prevClass: 'page-item',
         pageClass: 'page-item',
         activeClass: 'active',
         disabledClass: 'disabled',
         anchorClass: 'page-link'
     };
 
+
+	
     $.fn.luckmoshyPagination.Constructor = LuckmoshyPagination;
 
     $.fn.luckmoshyPagination.noConflict = function () {
@@ -310,5 +304,5 @@
     };
 
     $.fn.luckmoshyPagination.version = "00.1";
-
+    
 })(window.jQuery, window, document);

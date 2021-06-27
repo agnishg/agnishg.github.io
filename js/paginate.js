@@ -15,10 +15,7 @@ href: false,
 hrefVariable: '{{number}}',
 
 // Text labels
-first: 'First',
-prev: 'Previous',
-next: 'Next',
-last: 'Last',
+
 
 // carousel-style pagination
 loop: true,
@@ -32,10 +29,8 @@ onPageClick: function (event, page) {
 // pagination Classes
 paginationClass: 'pagination',
 nextClass: 'next',
-prevClass: 'prev',
-lastClass: 'last',
-firstClass: 'first',
-pageClass: 'page-item ',
+prevClass: 'page-item',
+pageClass: 'page-item',
 activeClass: 'active',
 disabledClass: 'disabled'
 

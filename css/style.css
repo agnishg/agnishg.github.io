@@ -64,8 +64,22 @@ body {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  color: #777777; }
+  color: #777777; 
+  
+  }
 
+ .line {
+        background: #8490ff;
+        height: 4px;
+        border-radius: 4px;
+        width: 0%;
+        position: fixed;
+        top: 0;
+    }
+    
+  .page-mimi{display:none}
+  .page-active {display: block;}
+  
 h1, h2, h3, h4, h5, h6 {
   font-family: "Heebo", sans-serif;
   font-weight: bold; }
@@ -325,7 +339,8 @@ button:focus {
         line-height: 26px;
         margin: 0px auto 45px; }
       .home_banner_area .banner_inner .banner_content .banner_map_img {
-        text-align: right; }
+        text-align: right; } 
+        
 
 .blog_banner {
   min-height: 780px;

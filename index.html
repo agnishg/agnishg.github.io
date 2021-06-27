@@ -18,6 +18,23 @@
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/scroll.css">
+        <style>body > .skiptranslate {display: none;}</style>
+        <script>
+        	$(function() 
+        	{
+  				$('a[href*=#]').on('click', function(e) 
+  				{
+    				e.preventDefault();
+    				$('html, body').animate(
+    				{ 
+    					scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  					});
+				});
+			});
+        </script>
+        
+
 
     </head>
     <body>
@@ -50,9 +67,21 @@
 									</ul>
 								</li> 
 								<li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+								<!--================Google Translate =================-->
+								<li class="nav-item submenu dropdown">
+									<a href="#googtrans(en|en)" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img width="22" alt="Google Translate Icon" src="https://upload.wikimedia.org/wikipedia/commons/d/db/Google_Translate_Icon.png"> EN</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a href="#googtrans(en|es)" class="nav-link lang-es lang-select"  data-lang="es">Spanish</a></li>
+										<li class="nav-item"><a href="#googtrans(en|fr)" class="nav-link lang-fr lang-select" data-lang="fr">French</a></li>
+										<li class="nav-item"><a href="#googtrans(en|de)" class="nav-link lang-de lang-select" data-lang="de">German</a></li>
+										<li class="nav-item"><a href="#googtrans(en|en)" class="nav-link lang- lang-select" data-lang="en">English</a></li>
+									</ul>
+								</li>
+								<!--================Google Translate =================-->
 							</ul>
 						</div> 
 					</div>
+					<div class="line" id="scrollIndicator"></div>
             	</nav>
             </div>
         </header>
@@ -69,17 +98,20 @@
 							</div>
 						</div>
 						<div class="col-lg-6">
-							<div class="banner_content">
-								<h5>This is me</h5>
-								<h2>Agnish Ghatak</h2>
-								<p>I am a data driven Growth Marketer, who is passionate about helping brands personalise customer journeys to build loyalty and drive growth. </p>  
-								<a class="banner_btn" href="AgnishGhatak_VisualCV.pdf">Download CV</a>
-								<a class="banner_btn" href="https://calendly.com/agnish-ghatak">Let's Talk</a>   
-							</div>
-						</div>
+							<div class = "row">
+								<div class="banner_content">
+									<h5>This is me</h5>
+									<h2>Agnish Ghatak</h2>
+									<p>I am a data driven Growth Marketer, who is passionate about helping brands personalise customer journeys to build loyalty and drive growth. </p>  
+									<a class="banner_btn" href="AgnishGhatak_VisualCV.pdf">Download CV</a>
+									<a class="banner_btn" href="https://calendly.com/agnish-ghatak">Let&apos;s Talk</a> 
+									<div class="scroll"><a href="#about-section"><span></span></a></div>	  
+								</div>
+							</div>									
+						</div>						
 					</div>
 				</div>
-            </div>
+            </div>          	 
         </section>
         <!--================End Home Banner Area =================-->
         
@@ -573,8 +605,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="vendors/counter-up/jquery.counterup.min.js"></script>
         <script src="js/mail-script.js"></script>
 
-        <script src="js/theme.js"></script>  
-
+        <script src="js/theme.js"></script>
+        <script src="js/scrolltracker.js"></script>  
+        
+        <script type="text/javascript" src="js/translator.js"></script>
+		<script type="text/javascript" src="js/gtranslate.js"></script>
 
       </body>
 </html>

@@ -293,6 +293,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="blog_right_sidebar">
+                            
                             <aside class="single_sidebar_widget search_widget">
                                 <div class="input-group">
                                     <input type="text" class="form-control" placeholder="Search Posts">
@@ -300,6 +301,13 @@
                                         <button class="btn btn-default" type="button"><i class="lnr lnr-magnifier"></i></button>
                                     </span>
                                 </div><!-- /input-group -->
+                                <div class="br"></div>
+                                <form class="search navbar-form navbar-right" action="http://www.google.com/search" method="get"role="search" onSubmit="Gsitesearch(this)"> 
+<div class="input-group"> <input name="q" type="hidden" /> 
+<input class="form-control" name="qfront" type="search" required class="searchField" placeholder="Google Site Search" maxlength="50"/> 
+<span class="input-group-btn"> <button type="submit" class="search-button btn btn-primary"> <span class="glyphicon glyphicon-search"></span> </button> </span> 
+</div> 
+</form>
                                 <div class="br"></div>
                             </aside>
                             <aside class="single_sidebar_widget author_widget">
@@ -513,10 +521,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="../vendors/counter-up/jquery.waypoints.min.js"></script>
         <script src="../vendors/counter-up/jquery.counterup.min.js"></script>
         <script src="../js/theme.js"></script>
-
-	<!-- Start of HubSpot Embed Code -->
-  	<script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/19877635.js"></script>
-	<!-- End of HubSpot Embed Code -->
+        
+        <script async src="https://cse.google.com/cse.js?cx=f1af8bcaa0f06191d"></script>
 
 	
     </body>

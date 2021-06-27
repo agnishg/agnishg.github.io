@@ -1,0 +1,50 @@
+.scroll a {
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  transition: opacity .3s;
+}
+.scroll a:hover {
+  opacity: .5;
+  
+}
+ 
+.scroll a span {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-left: 0px;
+  margin-top: 150px;
+  border-left: 2px solid #8490ff;
+  border-bottom: 2px solid #8490ff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+}
+@-webkit-keyframes sdb05 {
+  0% {
+
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
