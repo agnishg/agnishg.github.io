@@ -210,10 +210,11 @@
                 !_this.options.href && evt.preventDefault();
                 _this.show(parseInt($this.data('page')));
             });
+           $('html,body').animate({scrollTop: $('#blogtop').offset().top}, 1000);
         },
 
         makeHref: function (page) {
-            return this.options.href ? this.generateQueryString(page) : "#category-section";
+            return this.options.href ? this.generateQueryString(page) : "#blogtop";
         },
 
         makeText: function (text, page) {

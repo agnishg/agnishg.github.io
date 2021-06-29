@@ -4,7 +4,7 @@ totalPages: 3,
 startPage: 1,
 
 // maximum visible pages
-visiblePages: 3,
+visiblePages: 2,
 
 initiateStartPageClick: true,
 
