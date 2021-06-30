@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['submit'])){
+
     $to = 'agnish.ghatak@gmail.com';
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
@@ -32,5 +32,5 @@ if(isset($_POST['submit'])){
 	$body .= "</body></html>";
 
     $send = mail($to, $subject, $body, $headers);
-}
+
 ?>
