@@ -6116,18 +6116,21 @@
 
 {dynamicEl:[
 
-{src:'dg1.png',responsive:'dg1.png, dg1.png',thumb:'dg1.png'},
-{src:'dg2.png',responsive:'dg2.png, dg2.png',thumb:'dg2.png'},
-{src:'dg3.png',responsive:'dg3.png, dg3.png',thumb:'dg3.png'},
-{src:'dg4.png',responsive:'dg4.png, dg4.png',thumb:'dg4.png'},
-{src:'dg5.png',responsive:'dg5.png, dg5.png',thumb:'dg5.png'},
-{src:'App1.webp',responsive:'App2.webp, App2.webp',thumb:'App2.webp'},
-{src:'App3.webp',responsive:'App3.webp, App3.webp',thumb:'App3.webp'},
-{src:'App4.webp',responsive:'App4.webp, App4.webp',thumb:'App4.webp'},
-{src:'App5.webp',responsive:'App5.webp, App5.webp',thumb:'App5.webp'},{src:'App6.webp',responsive:'App6.webp, App6.webp',thumb:'App6.webp'},{src:'App7.webp',responsive:'App7.webp, App7.webp',thumb:'App7.webp'},{src:'App8.webp',responsive:'App8.webp, App8.webp',thumb:'App8.webp'},{src:'App9.webp',responsive:'App9.webp, App9.webp',thumb:'App9.webp'},
-{src:'App10.webp',responsive:'App10.webp, App10.webp',thumb:'App10.webp'},
-{src:'App11.webp',responsive:'App11.webp, App11.webp',thumb:'App11.webp'},
-{src:'App12.webp',responsive:'App12.webp, App12.webp',thumb:'App12.webp'}
+{src:'3/dg1.png',responsive:'3/dg1.png, dg1.png',thumb:'3/dg1.png'},
+{src:'3/dg2.png',responsive:'3/dg2.png, dg2.png',thumb:'3/dg2.png'},
+{src:'3/dg3.png',responsive:'3/dg3.png, dg3.png',thumb:'3/dg3.png'},
+{src:'3/dg4.png',responsive:'3/dg4.png, dg4.png',thumb:'3/dg4.png'},
+{src:'3/dg5.png',responsive:'3/dg5.png, dg5.png',thumb:'3/dg5.png'},
+{src:'3/App2.webp',responsive:'3/App2.webp, App2.webp',thumb:'3/App2.webp'},
+{src:'3/App3.webp',responsive:'3/App3.webp, App3.webp',thumb:'3/App3.webp'},
+{src:'3/App4.webp',responsive:'3/App4.webp, App4.webp',thumb:'3/App4.webp'},
+{src:'3/App6.webp',responsive:'3/App6.webp, App6.webp',thumb:'3/App6.webp'},
+{src:'3/App7.webp',responsive:'3/App7.webp, App7.webp',thumb:'3/App7.webp'},
+{src:'3/App8.webp',responsive:'3/App8.webp, App8.webp',thumb:'3/App8.webp'},
+{src:'3/App9.webp',responsive:'3/App9.webp, App9.webp',thumb:'3/App9.webp'},
+{src:'3/App10.webp',responsive:'3/App10.webp, App10.webp',thumb:'3/App10.webp'},
+{src:'3/App11.webp',responsive:'3/App11.webp, App11.webp',thumb:'3/App11.webp'},
+{src:'3/App12.webp',responsive:'3/App12.webp, App12.webp',thumb:'3/App12.webp'}
 
 ]})),
 
