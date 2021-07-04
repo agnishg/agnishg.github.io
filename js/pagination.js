@@ -84,14 +84,18 @@
         /**
          * Process html pagination on pagination-menu click
          */
+         
+         
         $(document).on('click', '.page-item > a', function (e) {
             e.preventDefault();
 
             if ($(this).parent().hasClass('disabled') || $(this).parent($this).length === 0) {
                 return false;
             } else {
-                if (settings.refresh === true) {
+                if (settings.refresh === true) 
+                {
                     refreshPageforItems($(this), settings.currentPage, settings.limit, settings.link, settings.formElement);
+                    
                 } else {
                     if ($(this).parent().hasClass('prev')) {
                         [settings.currentPage, rpmPageNext] = preparePageItems(settings.currentPage, rpmPageNext, settings.limit, rpmCustomDomElem, 'prev');
@@ -102,6 +106,7 @@
                         settings.currentPage = parseInt(cl);
                         [settings.currentPage, rpmPageNext] = preparePageItems(settings.currentPage, rpmPageNext, settings.limit, rpmCustomDomElem, 'page-item');
                     }
+                    
                 }
 
                 preparePageMenus(settings.currentPage, pages, $this);

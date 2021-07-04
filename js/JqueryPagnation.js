@@ -210,7 +210,6 @@
                 !_this.options.href && evt.preventDefault();
                 _this.show(parseInt($this.data('page')));
             });
-           $('html,body').animate({scrollTop: $('#blogtop').offset().top}, 1000);
         },
 
         makeHref: function (page) {
@@ -295,7 +294,13 @@
         anchorClass: 'page-link'
     };
 
-
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+    
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+    });
 	
     $.fn.luckmoshyPagination.Constructor = LuckmoshyPagination;
 

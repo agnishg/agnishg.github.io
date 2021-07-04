@@ -23,7 +23,7 @@ loop: true,
 // callback function
 onPageClick: function (event, page) {
    $('.page-active').removeClass('page-active');
-  $('#container-pagnation'+page).addClass('page-active');
+   $('#container-pagnation'+page).addClass('page-active');
 },
 
 // pagination Classes
