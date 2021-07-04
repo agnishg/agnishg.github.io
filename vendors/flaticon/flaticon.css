@@ -29,6 +29,9 @@ font-style: normal;
 margin-left: 20px;
 }
 
-.flaticon-skyline:before { content: "\f100"; }
-.flaticon-sketch:before { content: "\f101"; }
-.flaticon-city:before { content: "\f102"; }
+.flaticon-brand:before { content: "\f100"; }
+.flaticon-stat:before { content: "\f102"; }
+.flaticon-filter:before { content: "\f101"; }
+.flaticon-gear:before { content: "\f103"; }
+.flaticon-blog:before { content: "\f104"; }
+.flaticon-automation:before { content: "\f105"; }

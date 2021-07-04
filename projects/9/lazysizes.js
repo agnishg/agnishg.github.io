@@ -6121,6 +6121,7 @@
 {src:'9/rb1.png',responsive:'9/rb1.png, 9/rb1.png',thumb:'9/rb1.png'},
 {src:'9/rb2.png',responsive:'9/rb2.png, 9/rb2.png',thumb:'9/rb2.png'},
 {src:'9/rb3.png',responsive:'9/rb3.png, 9/rb3.png',thumb:'9/rb3.png'},
+{src:'9/rb4.png',responsive:'9/rb4.png, 9/rb4.png',thumb:'9/rb4.png'},
 {src:'9/rb5.png',responsive:'9/rb5.png, 9/rb5.png',thumb:'9/rb5.png'},
 {src:'9/rb6.png',responsive:'9/rb6.png, 9/rb6.png',thumb:'9/rb6.png'},
 {src:'9/rb7.png',responsive:'9/rb7.png, 9/rb7.png',thumb:'9/rb7.png'},
