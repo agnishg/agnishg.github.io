@@ -3099,19 +3099,21 @@ h6 {
 ============================================================================================ */
 /*---------------------------------------------------- */
 
-/*# sourceMappingURL=style.css.map */
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:40%;
-    position:relative;
-    height:0;
-    margin-bottom: 75px;
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#0B549f;
+  color:white;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #999;
 }
 
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+.my-float{
+  margin-top:12px;
+  margin-right:5px;
+  
 }
