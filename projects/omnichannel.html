@@ -253,7 +253,41 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <!--================End Footer Area =================-->
         
         
-        
+        <!--======================== Contact Button Modal =======================-->
+        <a href="#" class="float" data-toggle="modal" data-target="#bannerformmodal"> <i class="fa fa-paper-plane-o my-float fa-2x"></i>
+        </a>
+        <div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal" aria-hidden="true" id="bannerformmodal">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Contact Form</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          </div>
+                          <div class="modal-body">
+                            <div id="tripetto"></div>
+                          </div>        
+                  </div>
+          </div>
+        </div>
+              
+        <script src="https://unpkg.com/tripetto-runner-foundation"></script>
+        <script src="https://unpkg.com/tripetto-runner-autoscroll"></script>
+        <script src="https://unpkg.com/tripetto-services"></script>
+        <script>
+          var tripetto = TripettoServices.init({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoibEZlcnlxZ2pjaWN5RUJCR0dqZ1pRa2dEeVdTbVorVVk4bmJ0SnppZXBaMD0iLCJkZWZpbml0aW9uIjoiNDhCVCtKaHJ2ZWo2ekcvaDJmVWtrSWhERmNMNjBoNVhjVzNGK3JueHJsND0iLCJ0eXBlIjoiY29sbGVjdCJ9.0ef5DmJTUgd3N94487bn-RhlPN6kd6Evhi0J0pKrqIc" });
+      
+            TripettoAutoscroll.run({
+              element: document.getElementById("tripetto"),
+              definition: tripetto.definition,
+              styles: tripetto.styles,
+              l10n: tripetto.l10n,
+              locale: tripetto.locale,
+              translations: tripetto.translations,
+              attachments: tripetto.attachments,
+              onSubmit: tripetto.onSubmit
+            });
+        </script>  
+        <!--======================== Contact Button Modal =======================-->
         
         
         <!-- Optional JavaScript -->
