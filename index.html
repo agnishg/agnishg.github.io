@@ -588,9 +588,23 @@
           });
         });
   </script>
-  <!--===Form Code ===-->
-  <a href="https://agnishghatak.com#contact-section" class="float"> <i class="fa fa-paper-plane-o my-float fa-2x"></i>
+  <!--======================== Contact Button Modal =======================-->
+  <a href="#" class="float" data-toggle="modal" data-target="#bannerformmodal"> <i class="fa fa-paper-plane-o my-float fa-2x"></i>
   </a>
+  <div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal" aria-hidden="true" id="bannerformmodal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Contact Form</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                      <div id="tripetto"></div>
+                    </div>        
+            </div>
+    </div>
+  </div>
+        
   <script src="https://unpkg.com/tripetto-runner-foundation"></script>
   <script src="https://unpkg.com/tripetto-runner-autoscroll"></script>
   <script src="https://unpkg.com/tripetto-services"></script>
@@ -607,8 +621,8 @@
         attachments: tripetto.attachments,
         onSubmit: tripetto.onSubmit
       });
-  </script>
-  <!--===Form Code ===-->
+  </script>  
+  <!--======================== Contact Button Modal =======================-->
   <!-- Start of HubSpot Embed Code -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/19877635.js"></script>
   <!-- End of HubSpot Embed Code -->
