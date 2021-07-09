@@ -133,8 +133,8 @@ button:focus {
     max-width: 1650px;
     margin: auto; } }
 .white_bg {
-  background: #fff !important; }
-
+  background: #fff !important;}
+}
 /* Main Title Area css
 ============================================================================================ */
 .main_title {
@@ -665,6 +665,8 @@ button:focus {
 
 .blog_post img {
   max-width: 100%; }
+
+.blog_content { position: relative;}
 
 .blog_details {
   padding-top: 20px; }
