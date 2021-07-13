@@ -34,23 +34,24 @@
 
 <body>
 
-  <!--================Home Banner Area =================-->
+  <!--================TEST Area =================-->
   <script>
-    var access_key = '4d862995844b2a88e0bbf36deac41f75';
-    // get the API result via jQuery.ajax
-    $.ajax({
-        url: 'http://api.ipstack.com/check?' + '?access_key=' + access_key +'&fields=country_code',   
-        dataType: 'jsonp',
-        success: function(json) {
-    
-            // output the "capital" object inside "location"
-            alert(json.location.capital);
-          }
-        });  
+    $.get("https://freegeoip.app/json/", function (response) {
+    $("#ip").html("IP: " + response.ip);
+    $("#country_code").html(response.country_code);
+    if(response.country_code=='CA'||response.country_code=='US'){
+    	document.getElementById(response.country_code).style.display = "block";
+	}
+}, "jsonp");
+#LU { text-align: left; color: blue; display:none;} 
+<div id="ip">Loading...</div>
+<div id="country_code"></div>
+<div id="CA">THE CA</div>
+<div id="US">THE US</div> 
     
 </script>
 
-  <!--================End Home Banner Area =================-->
+  <!--================TEST Area =================-->
  
   <!--================Blog Area =================-->
   <section class="blog_area">
