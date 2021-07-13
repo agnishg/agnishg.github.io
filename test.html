@@ -39,7 +39,8 @@
     $.get("https://freegeoip.app/json/", function (response) {
     $("#ip").html("IP: " + response.ip);
     $("#country_code").html(response.country_code);
-    if(response.country_code=='CA'||response.country_code=='US'){
+    if(response.country_code=='LU')
+    {
     	document.getElementById(response.country_code).style.display = "block";
 	}
 }, "jsonp");
