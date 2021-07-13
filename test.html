@@ -342,8 +342,8 @@
     $.get("https://freegeoip.app/json/", function (response) 
     {
     	$("#country_code").html(response.country_code);
-    	window.alert(response.country_code);
-   	 	if(response.country_code=='LU')
+    	document.getElementById("demo").innerHTML = response.country_code;
+   	 	if(response.country_code=="LU")
     	{
     		document.getElementById("bannerformmodal").style.display = "none";
 		}
@@ -370,8 +370,7 @@
   <script src="js/paginate.js"></script>
   <script src="js/scrolltracker.js"></script>
   <script async src="https://cse.google.com/cse.js?cx=f1af8bcaa0f06191d"></script>
-  <script type="text/javascript" src="js/translator.js"></script>
-  <script type="text/javascript" src="js/gtranslate.js"></script>
+
 </body>
 
 </html>
