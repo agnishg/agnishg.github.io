@@ -46,6 +46,7 @@
                     <div class="blog_post">
                       <img src="blogs/1/blog_banner.jpeg" alt="" width=100%>
                       <div class="blog_details">	<a href="blogs/willdigitaleverruletheworld"><h2>Will Digital ever Rule the Marketing World</h2></a>
+                        <p id="demo">test</p>
                         <p>The constant tug of war between proponents of Digital and Traditional channels should finally be settled, thanks to the Pandemic. A lot has changed in the digital world since then. Here are the 3 most impacted spheres, where digital change has seen high ROI.</p>	<a href="blogs/willdigitaleverruletheworld" class="blog_btn">View More</a>
                       </div>
                     </div>
@@ -256,7 +257,6 @@
               <h3>About Me</h3>
             </div>
             <p>Reach out if you see something interesting, or for any feedback. I would love to connect.</p>
-            <p id="demo"></p>
           </aside>
         </div>
         <div class="col-lg-5 col-sm-6">
@@ -339,15 +339,28 @@
       
  <!--================TEST Area =================-->
   	<script>
+		
+		var access_key = '4d862995844b2a88e0bbf36deac41f75';
+		$.ajax({
+    		url: 'http://api.ipstack.com/check? '?access_key=' + access_key,   
+    		dataType: 'jsonp',
+    		success: function(json) {
+
+        	// output the "capital" object inside "location"
+        	alert(json.location.capital);
+    		}
+		});
+	<!--===
     $.get("https://freegeoip.app/json/", function (response) 
     {
     	$("#country_code").html(response.country_code);
-    	document.getElementById("demo").innerHTML = response.country_code;
+    	document.getElementById("demo").innerHTML = 2+3;
    	 	if(response.country_code=="LU")
     	{
     		document.getElementById("bannerformmodal").style.display = "none";
 		}
-	}, "jsonp");
+	}, "jsonp");====-->
+	
 	</script>
 
   <!--================TEST Area =================-->
