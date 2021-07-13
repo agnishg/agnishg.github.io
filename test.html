@@ -33,22 +33,6 @@
 </head>
 
 <body>
-
-  <!--================TEST Area =================-->
-  <script>
-    $.get("https://freegeoip.app/json/", function (response) 
-    {
-    	$("#country_code").html(response.country_code);
-   	 	if(response.country_code=='LU')
-    	{
-    		document.getElementById("footer-section").style.display = "none";
-		}
-	}, "jsonp");
-    
-</script>
-
-  <!--================TEST Area =================-->
- 
   <!--================Blog Area =================-->
   <section class="blog_area">
     <div class="container">
@@ -352,6 +336,19 @@
   </script>  
   <!--======================== Contact Button Modal =======================-->
       
+ <!--================TEST Area =================-->
+  	<script>
+    $.get("https://freegeoip.app/json/", function (response) 
+    {
+    	$("#country_code").html(response.country_code);
+   	 	if(response.country_code=='LU')
+    	{
+    		document.getElementById("footer-section").style.display = "none";
+		}
+	},"jsonp");
+	</script>
+
+  <!--================TEST Area =================-->
  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/popper.js"></script>
