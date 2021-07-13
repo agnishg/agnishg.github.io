@@ -105,7 +105,7 @@
               <ul id="luckmoshy" class="blog-pagination justify-content-center d-flex"></ul>
             </nav>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" id="noshow">
             <div class="blog_right_sidebar">
               <div class="gcse-search"></div>
               <div class="br"></div>
@@ -302,7 +302,7 @@
   <!--================End Footer Area =================-->
   
   <!--======================== Contact Button Modal =======================-->
-  <a href="#" class="float" data-toggle="modal" data-target="#bannerformmodal" id="noshow"> <i class="fa fa-paper-plane-o my-float fa-2x"></i>
+  <a href="#" class="float" data-toggle="modal" data-target="#bannerformmodal"> <i class="fa fa-paper-plane-o my-float fa-2x"></i>
   </a>
   <div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal" aria-hidden="true" id="bannerformmodal">
     <div class="modal-dialog modal-lg">
@@ -364,7 +364,7 @@
     $("#country_code").html(response.country_code);
     if(response.country_code=="LU")
     {
-    	document.getElementById("luckmoshy").style.display = "none";
+    	document.getElementById("noshow").style.display = "none";
 	}
 	}, "jsonp");
 </script>
