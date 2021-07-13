@@ -256,6 +256,7 @@
               <h3>About Me</h3>
             </div>
             <p>Reach out if you see something interesting, or for any feedback. I would love to connect.</p>
+            <p id="demo"></p>
           </aside>
         </div>
         <div class="col-lg-5 col-sm-6">
@@ -341,6 +342,7 @@
     $.get("https://freegeoip.app/json/", function (response) 
     {
     	$("#country_code").html(response.country_code);
+    	window.alert(response.country_code);
    	 	if(response.country_code=='LU')
     	{
     		document.getElementById("bannerformmodal").style.display = "none";
