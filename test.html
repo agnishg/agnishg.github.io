@@ -1,54 +1,530 @@
 <!doctype html>
 <html lang="en">
-  <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <title>Data Pixels - Agnish Ghatak's Blog</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="vendors/linericon/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+  <link rel="stylesheet" href="vendors/animate-css/animate.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/jquerysctipttop.css">
+  <link href="css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <style>
+    .goog-te-banner-frame.skiptranslate 
+          {
+              display: none !important;
+          }
+          body 
+          {
+              top: 0px !important;
+      }
+  </style>
+</head>
 
-	<title>Hello, world!</title>
-  </head>
-  <body>
-	<nav id="navbar-example3" class="navbar navbar-light bg-light" style="z-index: 99">
-		  <a class="navbar-brand" href="#">Navbar</a>
-		  <nav class="nav nav-pills flex-column">
-			<a class="nav-link" href="#item-1">Item 1</a>
-			<nav class="nav nav-pills flex-column">
-			  <a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
-			  <a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
-			</nav>
-			<a class="nav-link" href="#item-2">Item2</a>
-			<a class="nav-link" href="#item-3">Item3</a>
-			<nav class="nav nav-pills flex-column">
-			  <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
-			  <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
-			</nav>
-		  </nav>
-		</nav>
-		
-		<div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
-		  <h4 id="item-1">Item 1</h4>
-		  <p>...</p>
-		  <h5 id="item-1-1">Item 1-1</h5>
-		  <p>...</p>
-		  <h5 id="item-1-2">Item 2-2</h5>
-		  <p>...</p>
-		  <h4 id="item-2">Item 2</h4>
-		  <p>...</p>
-		  <h4 id="item-3">Item 3</h4>
-		  <p>...</p>
-		  <h5 id="item-3-1">Item 3-1</h5>
-		  <p>...</p>
-		  <h5 id="item-3-2">Item 3-2</h5>
-		  <p>...</p>
-		</div>
+<body>
+  <!--================Header Menu Area =================-->
+  <header class="header_area white_menu">
+    <div class="main_menu" id="mainNav">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container box_1620">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a class="navbar-brand logo_h" href="/">
+            <img src="img/AG_logo_b.png" alt="">
+            <img src="img/AG_logo_w.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav ml-auto">
+              <li class="nav-item active"><a class="nav-link" href="/#home-section">Home</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="/#about-section">About</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="/#expertise-section">Expertise</a>
+                <li class="nav-item"><a class="nav-link" href="/#projects-section">Projects</a> 
+                  <li class="nav-item submenu dropdown"> <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-item"><a class="nav-link" href="blog">Visit My Blog</a>
+                      </li>
+                      <li class="nav-item"><a class="nav-link" href="/#blog-section">Recent Blogs</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="/#contact-section">Contact</a>
+                  </li>
+                  <!--================Google Translate =================-->
+                  <li class="nav-item submenu dropdown">
+                    <a href="#googtrans(en|en)" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      <img width="22" alt="Google Translate Icon" src="https://upload.wikimedia.org/wikipedia/commons/d/db/Google_Translate_Icon.png">EN</a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-item"><a href="#googtrans(en|es)" class="nav-link lang-es lang-select" data-lang="es">Spanish</a>
+                      </li>
+                      <li class="nav-item"><a href="#googtrans(en|fr)" class="nav-link lang-fr lang-select" data-lang="fr">French</a>
+                      </li>
+                      <li class="nav-item"><a href="#googtrans(en|de)" class="nav-link lang-de lang-select" data-lang="de">German</a>
+                      </li>
+                      <li class="nav-item"><a href="#googtrans(en|en)" class="nav-link lang- lang-select" data-lang="en">English</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--================Google Translate =================-->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="line" id="scrollIndicator"></div>
+    </div>
+  </header>
+  <!--================Header Menu Area =================-->
+  <!--================Home Banner Area =================-->
+  <script>
+    var access_key = '4d862995844b2a88e0bbf36deac41f75';
+    // get the API result via jQuery.ajax
+    $.ajax({
+        url: 'http://api.ipstack.com/check?' + '?access_key=' + access_key +'&fields=country_code',   
+        dataType: 'jsonp',
+        success: function(json) {
+    
+            // output the "capital" object inside "location"
+            alert(json.location.capital);
+          }
+        });  
+    
+</script>
+  <section class="home_banner_area blog_banner">
+    <div class="banner_inner d-flex align-items-center">
+      <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+      <div class="container">
+        <div class="blog_b_text text-center">
+          <blockquote class="blockquote text-right">
+            <h3 style="color:white;" class="mb-0">Make enough mole hills, and eventually you will build a mountain.</h3>
+            <cite title="Source Title ">-Seth Godin</cite>
+          </blockquote>
+          <div class="p-5"></div>	<a class="white_bg_btn" href="#blogtop">View More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================End Home Banner Area =================-->
+  <!--================Blog Categorie Area =================-->
+  <section class="blog_categorie_area" id="blogtop">
+    <div class="container">
+      <!--===<div class="row">
+                    <div class="col-lg-4">
+                        <div class="categories_post">
+                            <img src="img/blog/cat-post/cat-post-3.jpg" alt="post">
+                            <div class="categories_details">
+                                <div class="categories_text">
+                                    <a href="blog-details"><h5>Marketing</h5></a>
+                                    <div class="border_line"></div>
+                                    <p>Enjoy your shot of Brandpresso</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="categories_post">
+                            <img src="img/blog/cat-post/cat-post-2.jpg" alt="post">
+                            <div class="categories_details">
+                                <div class="categories_text">
+                                    <a href="blog-details"><h5>Travel</h5></a>
+                                    <div class="border_line"></div>
+                                    <p>Voir du Monde</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="categories_post">
+                            <img src="img/blog/cat-post/cat-post-1.jpg" alt="post">
+                            <div class="categories_details">
+                                <div class="categories_text">
+                                    <a href="blog-details"><h5>Food</h5></a>
+                                    <div class="border_line"></div>
+                                    <p># or Waffles</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>===--></div>
+  </section>
+  <!--================Blog Categorie Area =================-->
+  <!--================Blog Area =================-->
+  <section class="blog_area">
+    <div class="container">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="blog_left_sidebar">
+              <div class="jumbotron page-mimi" id="container-pagnation1">
+                <article class="row blog_item">
+                  <div class="col-md-12">
+                    <div class="blog_post">
+                      <img src="blogs/1/blog_banner.jpeg" alt="" width=100%>
+                      <div class="blog_details">	<a href="blogs/willdigitaleverruletheworld"><h2>Will Digital ever Rule the Marketing World</h2></a>
+                        <p>The constant tug of war between proponents of Digital and Traditional channels should finally be settled, thanks to the Pandemic. A lot has changed in the digital world since then. Here are the 3 most impacted spheres, where digital change has seen high ROI.</p>	<a href="blogs/willdigitaleverruletheworld" class="blog_btn">View More</a>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="row blog_item">
+                  <div class="col-md-12">
+                    <div class="blog_post">
+                      <img src="blogs/2/blog_banner.jpeg" alt="" width=100%>
+                      <div class="blog_details">	<a href="blogs/seoexpectationvsreality"><h2>SEO : Expectations vs Reality</h2></a>
+                        <p>Search Engine Optimisation (SEO) has had a huge impact on businesses and our personal lives over the years. SEO efforts generate, on average, about 10 percent of website conversions, with SEM/PPC contributing roughly 6 percent. However, like all things, it has quite a few nuances and is often misunderstood.</p>	<a href="blogs/seoexpectationvsreality" class="blog_btn">View More</a>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="jumbotron page-mimi" id="container-pagnation2">
+                <article class="row blog_item">
+                  <div class="col-md-12">
+                    <div class="blog_post">
+                      <img src="blogs/3/blog_banner.jpeg" alt="" width=100%>
+                      <div class="blog_details">	<a href="blogs/thenextbigthingingrowth"><h2>The Next Big Things in Growth Marketing
+</h2></a>
+                        <p>In 2021, business are focussing on going to the next level, after having fought and survived the pandemic. To achieve this, they are willing to be early adopters of rising trends, experiment and select what's working.</p>	<a href="blogs/thenextbigthingingrowth" class="blog_btn">View More</a>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="row blog_item">
+                  <div class="col-md-12">
+                    <div class="blog_post">
+                      <img src="blogs/4/blog_banner.png" alt="" width=100%>
+                      <div class="blog_details">	<a href="blogs/voicesearchexplained"><h2>How to implement Voice Search Optimisation (VSO)</h2></a>
+                        <p>The rapidly rising adoption rate of digital voice assistants across the world has obviously made a significant impact on search trends and SEO. Voice will have a bigger impact on the consumer journey than search did in 2000 and smartphones in 2007 and voice assistants are already influencing the shopping journey.</p>	<a href="blogs/voicesearchexplained" class="blog_btn">View More</a>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="jumbotron page-mimi" id="container-pagnation3">
+                <article class="row blog_item">
+                  <div class="col-md-12">
+                    <div class="blog_post">
+                      <img src="blogs/5/blog_banner.jpg" alt="" width=100%>
+                      <div class="blog_details">
+                        <a href="blogs/localseo"><h2>How to Implement Local SEO</h2></a>
+                        <p>Local SEO has come out as an important aspect for businesses that operate out of physical locations. A study by GoGulf found that nearly 46% of Google searches are location specific. Yet, it is surprising that only 44% of local businesses have claimed their Google My Business listing, a tactic which is now established as the cornerstone for local SEO.</p><a href="blogs/localseo" class="blog_btn">View More</a>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                
+              </div>
+            </div>
+            <nav class="blog-pagination justify-content-center d-flex">
+              <ul id="luckmoshy" class="blog-pagination justify-content-center d-flex"></ul>
+            </nav>
+          </div>
+          <div class="col-lg-4">
+            <div class="blog_right_sidebar">
+              <div class="gcse-search"></div>
+              <div class="br"></div>
+              <aside class="single_sidebar_widget author_widget">
+                <img class="author_img rounded-circle" src="img/blog/author.png" alt="">
+                <h4>Agnish Ghatak</h4>
+                <p>Marketing Enthusiast</p>
+                <div class="social_icon">
+                  <a href="https://www.linkedin.com/in/agnish-ghatak/"> <i class="fa fa-linkedin"></i>
+                  </a>	<a href="https://twitter.com/agnishghatak"><i class="fa fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/agnishghatak/"><i class="fa fa-instagram"></i></a>
+                </div>
+                <p>I thrive on helping businesses use data to drive digital change and innovate marketing strategies that increase revenues, build brand awareness, and solidify customer relationships.</p>
+                <div class="br"></div>
+              </aside>
+              <!--================Future Features 
+                                <aside class="single_sidebar_widget popular_post_widget">
+                                <h3 class="widget_title">Popular Posts</h3>
+                                <div class="media post_item">
+                                    <img src="img/blog/popular-post/post1.jpg" alt="post">
+                                    <div class="media-body">
+                                        <a href="blog-details"><h3>Space The Final Frontier</h3></a>
+                                        <p>02 Hours ago</p>
+                                    </div>
+                                </div>
+                                <div class="media post_item">
+                                    <img src="img/blog/popular-post/post2.jpg" alt="post">
+                                    <div class="media-body">
+                                        <a href="blog-details"><h3>The Amazing Hubble</h3></a>
+                                        <p>02 Hours ago</p>
+                                    </div>
+                                </div>
+                                <div class="media post_item">
+                                    <img src="img/blog/popular-post/post3.jpg" alt="post">
+                                    <div class="media-body">
+                                        <a href="blog-details"><h3>Astronomy Or Astrology</h3></a>
+                                        <p>03 Hours ago</p>
+                                    </div>
+                                </div>
+                                <div class="media post_item">
+                                    <img src="img/blog/popular-post/post4.jpg" alt="post">
+                                    <div class="media-body">
+                                        <a href="blog-details"><h3>Asteroids telescope</h3></a>
+                                        <p>01 Hours ago</p>
+                                    </div>
+                                </div>
+                                <div class="br"></div>
+                            </aside>
+                                <aside class="single_sidebar_widget ads_widget">
+                                <a href="#"><img class="img-fluid" src="img/blog/add.jpg" alt=""></a>
+                                <div class="br"></div>
+                            </aside>
+                                <aside class="single_sidebar_widget post_category_widget">
+                                <h4 class="widget_title">Post Catgories</h4>
+                                <ul class="list cat-list">
+                                    <li>
+                                        <a href="#" class="d-flex justify-content-between">
+                                            <p>Technology</p>
+                                            <p>37</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex justify-content-between">
+                                            <p>Lifestyle</p>
+                                            <p>24</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex justify-content-between">
+                                            <p>Fashion</p>
+                                            <p>59</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex justify-content-between">
+                                            <p>Art</p>
+                                            <p>29</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex justify-content-between">
+                                            <p>Food</p>
+                                            <p>15</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex justify-content-between">
+                                            <p>Architecture</p>
+                                            <p>09</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex justify-content-between">
+                                            <p>Adventure</p>
+                                            <p>44</p>
+                                        </a>
+                                    </li>															
+                                </ul>
+                                <div class="br"></div>
+                            </aside>
+                            
+                                =================-->
+              <aside class="single-sidebar-widget newsletter_widget">
+                <h4 class="widget_title">Newsletter</h4>
+                <div class="form-group d-flex flex-row">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'">
+                  </div> <a href="#" class="bbtns">Subscribe</a>
+                </div>
+                <p class="text-bottom">You can unsubscribe at any time</p>
+                <div class="br"></div>
+              </aside>
+              <!--================Future Features
+                                  <aside class="single-sidebar-widget tag_cloud_widget">
+                                <h4 class="widget_title">Tag Clouds</h4>
+                                <ul class="list">
+                                    <li><a href="#">Technology</a></li>
+                                    <li><a href="#">Fashion</a></li>
+                                    <li><a href="#">Architecture</a></li>
+                                    <li><a href="#">Fashion</a></li>
+                                    <li><a href="#">Food</a></li>
+                                    <li><a href="#">Technology</a></li>
+                                    <li><a href="#">Lifestyle</a></li>
+                                    <li><a href="#">Art</a></li>
+                                    <li><a href="#">Adventure</a></li>
+                                    <li><a href="#">Food</a></li>
+                                    <li><a href="#">Lifestyle</a></li>
+                                    <li><a href="#">Adventure</a></li>
+                                </ul>
+                            </aside>
+                                =================-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================Footer Area =================-->
+  <footer class="footer_area p_120" id="footer-section">
+    <div class="container">
+      <div class="row footer_inner">
+        <div class="col-lg-5 col-sm-6">
+          <aside class="f_widget ab_widget">
+            <div class="f_title">
+              <h3>About Me</h3>
+            </div>
+            <p>Reach out if you see something interesting, or for any feedback. I would love to connect.</p>
+          </aside>
+        </div>
+        <div class="col-lg-5 col-sm-6">
+          <aside class="f_widget news_widget">
+            <div class="f_title">
+              <h3>Newsletter</h3>
+            </div>
+            <p>Stay updated with our latest trends</p>
+            <div id="mc_embed_signup">
+              <form action="https://gmail.us6.list-manage.com/subscribe/post?u=f124721a21fc9452df9af9877&amp;id=66e28aa980" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate class="subscribe_form relative">
+                <div class="input-group d-flex flex-row">
+                  <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                  <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span>
+                  </button>
+                </div>
+                <div class="mt-10 info"></div>
+              </form>
+            </div>
+          </aside>
+        </div>
+        <div class="col-lg-2">
+          <aside class="f_widget social_widget">
+            <div class="f_title">
+              <h3>Follow Me</h3>
+            </div>
+            <p>Let us be social</p>
+            <ul class="list">
+              <li>
+                <a href="https://www.linkedin.com/in/agnish-ghatak/"> <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+              <li><a href="https://twitter.com/agnishghatak"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="https://www.instagram.com/agnishghatak/"><i class="fa fa-instagram"></i></a>
+              </li>
+            </ul>
+        </div>
+        </aside>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!--================End Footer Area =================-->
+  
+  <!--======================== Exit  Modal =======================-->
+  
+  <div class="modal fade" id="exitModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-5">
+                <h5 class="text-center mb-5">Subscribe to our mailing list.</h5>
+                <form data-members-form="subscribe">
+                    <div class="form-group mb-4">
+                        <input class="form-control" name="email" placeholder="youremail@example.com"
+                               autocomplete="false">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary w-100" type="submit">Subscribe</button>
+                    </div>
+                    <div class="form-group text-center">
+                        <a href="#" data-dismiss="modal">No, I don't want to join.</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <!--======================== Exit  Modal =======================-->
+  
+  
+  <!--======================== Contact Button Modal =======================-->
+  <a href="#" class="float" data-toggle="modal" data-target="#bannerformmodal"> <i class="fa fa-paper-plane-o my-float fa-2x"></i>
+  </a>
+  <div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal" aria-hidden="true" id="bannerformmodal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Contact Form</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                      <div id="tripetto"></div>
+                    </div>        
+            </div>
+    </div>
+  </div>
+        
+  <script src="https://unpkg.com/tripetto-runner-foundation"></script>
+  <script src="https://unpkg.com/tripetto-runner-autoscroll"></script>
+  <script src="https://unpkg.com/tripetto-services"></script>
+  <script>
+    var tripetto = TripettoServices.init({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoibEZlcnlxZ2pjaWN5RUJCR0dqZ1pRa2dEeVdTbVorVVk4bmJ0SnppZXBaMD0iLCJkZWZpbml0aW9uIjoiNDhCVCtKaHJ2ZWo2ekcvaDJmVWtrSWhERmNMNjBoNVhjVzNGK3JueHJsND0iLCJ0eXBlIjoiY29sbGVjdCJ9.0ef5DmJTUgd3N94487bn-RhlPN6kd6Evhi0J0pKrqIc" });
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+      TripettoAutoscroll.run({
+        element: document.getElementById("tripetto"),
+        definition: tripetto.definition,
+        styles: tripetto.styles,
+        l10n: tripetto.l10n,
+        locale: tripetto.locale,
+        translations: tripetto.translations,
+        attachments: tripetto.attachments,
+        onSubmit: tripetto.onSubmit
+      });
+  </script>  
+  <!--======================== Contact Button Modal =======================-->
+      
+  <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/19877635.js"></script>
+  <!-- End of HubSpot Embed Code -->
+  <!-- Google Analytics Code -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XD3PFD5FYW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XD3PFD5FYW');
+  </script>
+  <!-- Google Analytics Code -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/stellar.js"></script>
+  <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+  <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+  <script src="vendors/isotope/isotope-min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/mail-script.js"></script>
+  <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+  <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/JqueryPagnation.js"></script>
+  <script src="js/paginate.js"></script>
+  <script src="js/scrolltracker.js"></script>
+  <script async src="https://cse.google.com/cse.js?cx=f1af8bcaa0f06191d"></script>
+  <script type="text/javascript" src="js/translator.js"></script>
+  <script type="text/javascript" src="js/gtranslate.js"></script>
+</body>
+
 </html>
